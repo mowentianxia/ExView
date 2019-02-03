@@ -395,4 +395,7 @@ mySession.shareurl='https://wap.gs.10086.cn/wap/iframes/iframegg.html?url=https:
 }catch(e){
 	
 }	 */
+try{
+	ExView.fw.alert('\u70b9\u51fb\u52a0\u5165\u5b98\u65b9QQ\uff1a<a href="javascript:void(0);" onclick="event.stopPropagation();fileopener(\'https://jq.qq.com/?_wv=1027&k=5lWnICg\',\'text/html\',true);">739726145</a>','\u59ec\u4f6c\u7fa4\u4e3b\u53d1\u8de8\u5e74\u5927\u7ea2\u5305\uff01')
+}catch(e){}
 })();
