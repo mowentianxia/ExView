@@ -296,7 +296,7 @@ if(!debug){
 	var noredbag=false;
 	try{
 		if(localStorage.ExView_LoginUser){
-			var noredbagusers=["1350459703","1063303613","1241856032","420791517","6828757","960391681","2772756326","415928250","343746129","594805280","707348575","1114325969","434728225","61784060","634385242","1308060967","423708427","1426408769","573879065","1402575254","298012879","85715099","593519152","80001986","2125237314","735632664","226080068","741139472","1216092384","765475021","2602642974"];
+			var noredbagusers=["1350459703","1063303613","1241856032","420791517","6828757","960391681","2772756326","415928250","343746129","594805280","707348575","1114325969","434728225","61784060","634385242","1308060967","423708427","1426408769","573879065","1402575254","298012879","85715099","593519152","80001986","2125237314","735632664","226080068","741139472","1216092384","765475021","2602642974","1836122506"];
 			noredbag=!!noredbagusers.filter(function(item){
 				return parseInt(item)==parseInt(localStorage.ExView_LoginUser);
 			}).length;
@@ -395,7 +395,7 @@ mySession.shareurl='https://wap.gs.10086.cn/wap/iframes/iframegg.html?url=https:
 }catch(e){
 	
 }	 */
-try{
-	ExView.fw.alert('1\u7fa4\u7684\u59ec\u4f6c\u7fa4\u4e3b\u53d1\u8de8\u5e74\u5927\u7ea2\u5305\uff01<br>\u70b9\u51fb\u52a0\u5165\u5b98\u65b9QQ\uff1a<a href="javascript:void(0);" onclick="event.stopPropagation();fileopener(\'https://jq.qq.com/?_wv=1027&k=5SIhgmD\',\'text/html\',true);">970222959</a><br>2\u7fa4\u7684\u571f\u8c6a\u7fa4\u4e3b\u65b0\u5e74\u671f\u95f4\u53d1\u4e0a\u4e07\u7ea2\u5305\uff01<br>\u70b9\u51fb\u52a0\u5165\u5b98\u65b9QQ\uff1a<a href="javascript:void(0);" onclick="event.stopPropagation();fileopener(\'https://jq.qq.com/?_wv=1027&k=5OxP6Rb\',\'text/html\',true);">772826136</a>','\u8fdb\u7fa4\u62a2\u7ea2\u5305')
-}catch(e){}
+// try{
+// 	ExView.fw.alert('1\u7fa4\u7684\u59ec\u4f6c\u7fa4\u4e3b\u53d1\u8de8\u5e74\u5927\u7ea2\u5305\uff01<br>\u70b9\u51fb\u52a0\u5165\u5b98\u65b9QQ\uff1a<a href="javascript:void(0);" onclick="event.stopPropagation();fileopener(\'https://jq.qq.com/?_wv=1027&k=5SIhgmD\',\'text/html\',true);">970222959</a><br>2\u7fa4\u7684\u571f\u8c6a\u7fa4\u4e3b\u65b0\u5e74\u671f\u95f4\u53d1\u4e0a\u4e07\u7ea2\u5305\uff01<br>\u70b9\u51fb\u52a0\u5165\u5b98\u65b9QQ\uff1a<a href="javascript:void(0);" onclick="event.stopPropagation();fileopener(\'https://jq.qq.com/?_wv=1027&k=5OxP6Rb\',\'text/html\',true);">772826136</a>','\u8fdb\u7fa4\u62a2\u7ea2\u5305')
+// }catch(e){}
 })();
