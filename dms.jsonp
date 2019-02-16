@@ -270,7 +270,7 @@ try{
 								fileopener(updatepath,undefined,true);
 							},
 							function () {
-								updateIOSVersion(onlineupdatepath,nowversion,newestversion,onlineupdatemd5);
+								updateIOSVersion(onlineupdatepath,ExView.versionCode,newestversion,onlineupdatemd5);
 							},
 						)
 					}else if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
