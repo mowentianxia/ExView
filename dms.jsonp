@@ -34,7 +34,7 @@
 		return '';
 	}
 
-	window.showdialog=window.showdialog||function(){
+	var cAlert=function(){
 		var strArr=[];
 		var funArr=[];
 		var buttonArr;
@@ -289,7 +289,7 @@ try{
 			}else{
 				try{
 					if(typeof(updateIOSVersion)=='function'&&onlineupdate){
-						window.showdialog(
+						cAlert(
 							'\u5728\u7ebf\u5347\u7ea7\u8fd8\u662f\u4e0b\u8f7dIPA\u5b89\u88c5\u6587\u4ef6?',
 							['\u53d6\u6d88','\u4e0b\u8f7dIPA','\u5728\u7ebf\u5347\u7ea7'],
 							function(){
@@ -301,7 +301,7 @@ try{
 							function () {
 								updateIOSVersion(onlineupdatepath,ExView.versionCode,newestversion,onlineupdatemd5);
 							},
-						)
+						);
 					}else if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
 						updateDesktopVersion(onlineupdatepath,newestversion,undefined,onlineupdatemd5);
 					}else{
