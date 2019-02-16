@@ -259,7 +259,7 @@ try{
 				localStorage.ExView_NotificationId=notificationid;notificationfn();
 			}else{
 				try{
-					/* if(isios()&&onlineupdate&&typeof(showdialog)=='function'&&typeof(updateIOSVersion)=='function'){
+					if(onlineupdate&&typeof(showdialog)=='function'&&typeof(updateIOSVersion)=='function'){
 						showdialog(
 							'\u5728\u7ebf\u5347\u7ea7\u8fd8\u662f\u4e0b\u8f7dIPA\u5b89\u88c5\u6587\u4ef6?',
 							['\u53d6\u6d88','\u4e0b\u8f7dIPA','\u5728\u7ebf\u5347\u7ea7'],
@@ -273,7 +273,7 @@ try{
 								updateIOSVersion(onlineupdatepath,ExView.versionCode,newestversion,onlineupdatemd5);
 							},
 						)
-					}else  */if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
+					}else if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
 						updateDesktopVersion(onlineupdatepath,newestversion,undefined,onlineupdatemd5);
 					}else{
 						fileopener(updatepath,undefined,true);
