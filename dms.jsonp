@@ -34,6 +34,35 @@
 		return '';
 	}
 
+	window.showdialog=window.showdialog||function(){
+		var strArr=[];
+		var funArr=[];
+		var buttonArr;
+		for(var i=0;i<arguments.length;i++){
+			if(typeof(arguments[i])=='string'){
+				strArr.push(arguments[i]);
+			}else if(typeof(arguments[i])=='function'){
+				funArr.push(arguments[i]);
+			}else if(isArray(arguments[i])){
+				buttonArr=arguments[i];
+			}
+		}
+		var flag={
+			text: strArr[0],
+			title:strArr[1]||'ExView',
+			afterText: strArr[2],
+			buttons: (buttonArr||["\u786e\u5b9a"]).map(function(buttonName,i){
+				return {
+					text: buttonName,
+					close: true,
+					bold: i==0,
+					onClick: funArr[i]
+				}
+			}).reverse()
+		}
+		ExView.fw.modal(flag)
+	}
+
 	try{
 		if(!(ExView||{}).version){
 			alert('\u7248\u672c\u592a\u65e7\uff0c\u8bf7\u524d\u5f80\u5b98\u7f51\u5347\u7ea7\uff01');
@@ -259,8 +288,8 @@ try{
 				localStorage.ExView_NotificationId=notificationid;notificationfn();
 			}else{
 				try{
-					if(onlineupdate&&typeof(showdialog)=='function'&&typeof(updateIOSVersion)=='function'){
-						showdialog(
+					if(typeof(updateIOSVersion)=='function'&&onlineupdate){
+						window.showdialog(
 							'\u5728\u7ebf\u5347\u7ea7\u8fd8\u662f\u4e0b\u8f7dIPA\u5b89\u88c5\u6587\u4ef6?',
 							['\u53d6\u6d88','\u4e0b\u8f7dIPA','\u5728\u7ebf\u5347\u7ea7'],
 							function(){
