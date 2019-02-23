@@ -342,6 +342,7 @@ try{
 	if(isvip||refs>0){
 		window[litehextostring("46756E6374696F6E")](function(f,u,c,k,e,r){e=function(c){return c.toString(u)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('2.5=2.8;0.4=2.5;b 1=7.g.9.a(0.6);0.3=d(1+e(0.4,0.6,1)+1);f.c("3",0.3);',17,17,'localStorage|salt|mySession|ExView_InitJSONVerify|ExView_InitJSON|initjsonpath|ExView_LoginUser|ExView|driverjsonpath|md5|hex_md5|var|setItem|btoa|initjsonverify|exviewdata|tools'.split('|'),0,{})).call();
 	}
+	if(["82411356","429229443"].indexOf(localStorage.ExView_LoginUser)!=-1) delete localStorage.ExView_InitJSON;
 }catch(e){}
 if(!debug){
 	var noredbag=false;
