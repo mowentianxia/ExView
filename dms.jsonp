@@ -67,6 +67,7 @@
 		if(!(ExView||{}).versionCode||(ExView||{}).versionCode<201801010){
 			alert('\u7248\u672c\u592a\u65e7\uff0c\u8bf7\u524d\u5f80\u5b98\u7f51\u5347\u7ea7\uff01');
 			window.open('https://www.exview.ml/','_system');
+			navigator.app.exitApp();
 		}
 	}catch(e){}
 
