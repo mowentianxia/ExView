@@ -93,21 +93,22 @@ var onlineupdatemd5;
 if(!isdesktop()){
 	if(isios()){
 		var nowversion=ExView.iosversion||ExView.version;
-		var newestversion="2.5.9_beta3";
-		var newestversioninfo="2019.03.17 2.5.9_beta3<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u4fee\u590d\u82e5\u5e72\u5c0f\u95ee\u9898";
+		var newestversion="2.5.9_beta4";
+		var newestversioninfo="2019.03.18 2.5.9_beta4<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u652f\u6301\u7a7a\u4e2d\u5b89\u88c5EPK\u6587\u4ef6";
 		var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 		var onlineupdatepath="https://raw.githubusercontent.com/ghostgzt/ExView/master/platforms/ios/MoeRuntimeIOS.bin"+('?_='+(new Date()).getTime());
-		onlineupdatemd5="92823016969224588cd1e59f96167dad";
+		onlineupdatemd5="1399df0a4e952d1ddfba75c3bbea434b";
 		var onlineupdateversionName=newestversion;
-		var onlineupdateversionCode=201903160;
+		var onlineupdateversionCode=201903180;
 		onlineupdate=true;
 		var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";
 	}else{
 		var nowversion=ExView.version;
-		var newestversion="2.5.9_beta3";
-		var newestversioninfo="2019.03.17 2.5.9_beta3<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u4fee\u590d\u82e5\u5e72\u5c0f\u95ee\u9898";
+		var newestversion="2.5.9_beta4";
+		var newestversioninfo="2019.03.18 2.5.9_beta4<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u652f\u6301\u7a7a\u4e2d\u5b89\u88c5EPK\u6587\u4ef6";
 		// var updatepath=(iscrosswalk()?'https://raw.githubusercontent.com/ghostgzt/ExView/master/platforms/android/ExViewPlus-separate-release-lastest.apk':'https://raw.githubusercontent.com/ghostgzt/ExView/master/platforms/android/ExView-release-lastest.apk')+('?_='+(new Date()).getTime());
-		var updatepath=(iscrosswalk()?'https://www.lanzous.com/i3gejwj':'https://www.lanzous.com/i3gejxa')/* +('?_='+(new Date()).getTime()) */;
+		var updatepath=(iscrosswalk()?'https://gitee.com/gentle/Datas/raw/master/ExView/platforms/android/ExViewPlus-separate-release-lastest.apk':'https://gitee.com/gentle/Datas/raw/master/ExView/platforms/android/ExView-release-lastest.apk')+('?_='+(new Date()).getTime());
+		// var updatepath=(iscrosswalk()?'https://www.lanzous.com/i3gejwj':'https://www.lanzous.com/i3gejxa')/* +('?_='+(new Date()).getTime()) */;
 		try{
 			if(device.appPackName=='com.google.android.apps.maps') {
 				newestversion='2.5.9';
@@ -119,20 +120,20 @@ if(!isdesktop()){
 	}
 }else if(isdesktopmac()){
 	var nowversion=ExView.nativeversion;
-	var newestversion="0.2.58";
-	var newestversioninfo="2019.03.17 0.2.58<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u4fee\u590d\u82e5\u5e72\u5c0f\u95ee\u9898";
+	var newestversion="0.2.59";
+	var newestversioninfo="2019.03.18 0.2.59<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u652f\u6301\u7a7a\u4e2d\u5b89\u88c5EPK\u6587\u4ef6";
 	var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 	var onlineupdatepath="https://raw.githubusercontent.com/ghostgzt/ExView/master/platforms/mac/MoeRuntimeDesktopMac.bin"+('?_='+(new Date()).getTime());
-	onlineupdatemd5="3a6ec06f6b7e6a08d40f935f37a64782";
+	onlineupdatemd5="2e1db29808a59932c394b83bbce50359";
 	onlineupdate=true;
 	var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";
 }else{
 	var nowversion=ExView.nativeversion;
-	var newestversion="0.2.58";
-	var newestversioninfo="2019.03.17 0.2.58<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u4fee\u590d\u82e5\u5e72\u5c0f\u95ee\u9898";
+	var newestversion="0.2.59";
+	var newestversioninfo="2019.03.18 0.2.59<br>1.\u4fee\u590d\u5206\u7c7b\u548c\u76f8\u5173\u641c\u7d22\u5217\u8868\u5361\u6b7b\u95ee\u9898<br>2.\u5361\u7247\u5217\u8868\u754c\u9762\u8c03\u6574<br>3.\u652f\u6301Cimoc\u6f2b\u753b<br>4.\u652f\u6301\u65b0\u7684EPK\u6587\u4ef6\u683c\u5f0f<br>5.\u652f\u6301\u7a7a\u4e2d\u5b89\u88c5EPK\u6587\u4ef6";
 	var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 	var onlineupdatepath="https://raw.githubusercontent.com/ghostgzt/ExView/master/platforms/windows/MoeRuntimeDesktop.bin"+('?_='+(new Date()).getTime());
-	onlineupdatemd5="71d7fd751a0b2e98838056bcb65de7d9";
+	onlineupdatemd5="9d929036acd9a6317f6ca6f72c2fcf67";
 	onlineupdate=true;
 	var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";
 }
